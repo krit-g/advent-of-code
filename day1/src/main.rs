@@ -13,7 +13,7 @@ async fn main() -> anyhow::Result<()> {
 }
 
 async fn read_file() -> anyhow::Result<(Vec<i32>, Vec<i32>)> {
-    let mut file = File::open("../input-1.txt").await?;
+    let mut file = File::open("day1/input-1.txt").await?;
     let mut buf = String::new();
     file.read_to_string(&mut buf).await?;
 
